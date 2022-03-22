@@ -1,0 +1,22 @@
+src/com/wada811/immutablependingintent/test/MutablePendingIntentKotlin.kt:11: Error: Using MutablePendingIntent without UseMutablePendingIntent annotation [UseMutablePendingIntentNoReason]
+        return MutablePendingIntent.getActivity(context, requestCode, intent, flags)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/com/wada811/immutablependingintent/test/MutablePendingIntentKotlin.kt:15: Error: Using MutablePendingIntent without UseMutablePendingIntent annotation [UseMutablePendingIntentNoReason]
+        return MutablePendingIntent.getActivity(context, requestCode, intent, flags, options)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/com/wada811/immutablependingintent/test/MutablePendingIntentKotlin.kt:19: Error: Using MutablePendingIntent without UseMutablePendingIntent annotation [UseMutablePendingIntentNoReason]
+        return MutablePendingIntent.getActivities(context, requestCode, intents, flags)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/com/wada811/immutablependingintent/test/MutablePendingIntentKotlin.kt:23: Error: Using MutablePendingIntent without UseMutablePendingIntent annotation [UseMutablePendingIntentNoReason]
+        return MutablePendingIntent.getActivities(context, requestCode, intents, flags, options)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/com/wada811/immutablependingintent/test/MutablePendingIntentKotlin.kt:27: Error: Using MutablePendingIntent without UseMutablePendingIntent annotation [UseMutablePendingIntentNoReason]
+        return MutablePendingIntent.getBroadcast(context, requestCode, intent, flags)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/com/wada811/immutablependingintent/test/MutablePendingIntentKotlin.kt:31: Error: Using MutablePendingIntent without UseMutablePendingIntent annotation [UseMutablePendingIntentNoReason]
+        return MutablePendingIntent.getService(context, requestCode, intent, flags)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/com/wada811/immutablependingintent/test/MutablePendingIntentKotlin.kt:35: Error: Using MutablePendingIntent without UseMutablePendingIntent annotation [UseMutablePendingIntentNoReason]
+        return MutablePendingIntent.getForegroundService(context, requestCode, intent, flags)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+7 errors, 0 warnings

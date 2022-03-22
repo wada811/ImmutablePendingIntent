@@ -1,0 +1,38 @@
+plugins {
+    id 'java-library'
+    id 'org.jetbrains.kotlin.jvm'
+    id 'com.android.lint'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_8
+    targetCompatibility = JavaVersion.VERSION_1_8
+}
+
+configurations.all {
+    resolutionStrategy.force "org.jetbrains.kotlin:kotlin-stdlib:$kotlinVersion"
+    resolutionStrategy.force "org.jetbrains.kotlin:kotlin-stdlib-common:$kotlinVersion"
+    resolutionStrategy.force "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
+    resolutionStrategy.force "org.jetbrains.kotlin:kotlin-stdlib-jdk8:$kotlinVersion"
+    resolutionStrategy.force "org.jetbrains.kotlin:kotlin-reflect:$kotlinVersion"
+}
+
+dependencies {
+    // For a description of the below dependencies, see the main project README
+    compileOnly "com.android.tools.lint:lint-api:$lintVersion"
+    // You typically don't need this one:
+    // compileOnly "com.android.tools.lint:lint-checks:$lintVersion"
+
+    // Fix the following error
+    // Found more than one jar in the 'lintPublish' configuration.
+    // Only one file is supported.
+    // If using a separate Gradle project, make sure compilation dependencies are using compileOnly
+    compileOnly "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlinVersion"
+}
+
+jar {
+    manifest {
+        // Only use the "-v2" key here if your ImmutablePendingIntent-lint have been updated to the new 3.0 APIs (including UAST)
+        attributes("Lint-Registry-v2": "com.wada811.immutablependingintent.lint.ImmutablePendingIntentIssueRegistry")
+    }
+}

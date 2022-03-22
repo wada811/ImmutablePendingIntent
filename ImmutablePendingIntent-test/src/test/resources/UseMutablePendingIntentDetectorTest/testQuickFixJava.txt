@@ -1,0 +1,21 @@
+Fix for src/com/wada811/immutablependingintent/test/MutablePendingIntentJava.java line 11: Add 'android.app.UseMutablePendingIntent' annotation to getActivity:
+@@ -10 +10
++     @android.app.UseMutablePendingIntent(reason = android.app.UseMutablePendingIntent.Reason.YouMustSelectReason)
+Fix for src/com/wada811/immutablependingintent/test/MutablePendingIntentJava.java line 15: Add 'android.app.UseMutablePendingIntent' annotation to getActivity:
+@@ -14 +14
++     @android.app.UseMutablePendingIntent(reason = android.app.UseMutablePendingIntent.Reason.YouMustSelectReason)
+Fix for src/com/wada811/immutablependingintent/test/MutablePendingIntentJava.java line 19: Add 'android.app.UseMutablePendingIntent' annotation to getActivities:
+@@ -18 +18
++     @android.app.UseMutablePendingIntent(reason = android.app.UseMutablePendingIntent.Reason.YouMustSelectReason)
+Fix for src/com/wada811/immutablependingintent/test/MutablePendingIntentJava.java line 23: Add 'android.app.UseMutablePendingIntent' annotation to getActivities:
+@@ -22 +22
++     @android.app.UseMutablePendingIntent(reason = android.app.UseMutablePendingIntent.Reason.YouMustSelectReason)
+Fix for src/com/wada811/immutablependingintent/test/MutablePendingIntentJava.java line 27: Add 'android.app.UseMutablePendingIntent' annotation to getBroadcast:
+@@ -26 +26
++     @android.app.UseMutablePendingIntent(reason = android.app.UseMutablePendingIntent.Reason.YouMustSelectReason)
+Fix for src/com/wada811/immutablependingintent/test/MutablePendingIntentJava.java line 31: Add 'android.app.UseMutablePendingIntent' annotation to getService:
+@@ -30 +30
++     @android.app.UseMutablePendingIntent(reason = android.app.UseMutablePendingIntent.Reason.YouMustSelectReason)
+Fix for src/com/wada811/immutablependingintent/test/MutablePendingIntentJava.java line 35: Add 'android.app.UseMutablePendingIntent' annotation to getForegroundService:
+@@ -34 +34
++     @android.app.UseMutablePendingIntent(reason = android.app.UseMutablePendingIntent.Reason.YouMustSelectReason)

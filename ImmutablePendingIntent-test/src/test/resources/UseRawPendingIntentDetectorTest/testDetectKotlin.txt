@@ -1,0 +1,22 @@
+src/com/wada811/immutablependingintent/test/RawPendingIntentKotlin.kt:10: Error: Using raw PendingIntent, not ImmutablePendingIntent or MutablePendingIntent [UseRawPendingIntent]
+        return PendingIntent.getActivity(context, requestCode, intent, flags)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/com/wada811/immutablependingintent/test/RawPendingIntentKotlin.kt:14: Error: Using raw PendingIntent, not ImmutablePendingIntent or MutablePendingIntent [UseRawPendingIntent]
+        return PendingIntent.getActivity(context, requestCode, intent, flags, options)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/com/wada811/immutablependingintent/test/RawPendingIntentKotlin.kt:18: Error: Using raw PendingIntent, not ImmutablePendingIntent or MutablePendingIntent [UseRawPendingIntent]
+        return PendingIntent.getActivities(context, requestCode, intents, flags)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/com/wada811/immutablependingintent/test/RawPendingIntentKotlin.kt:22: Error: Using raw PendingIntent, not ImmutablePendingIntent or MutablePendingIntent [UseRawPendingIntent]
+        return PendingIntent.getActivities(context, requestCode, intents, flags, options)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/com/wada811/immutablependingintent/test/RawPendingIntentKotlin.kt:26: Error: Using raw PendingIntent, not ImmutablePendingIntent or MutablePendingIntent [UseRawPendingIntent]
+        return PendingIntent.getBroadcast(context, requestCode, intent, flags)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/com/wada811/immutablependingintent/test/RawPendingIntentKotlin.kt:30: Error: Using raw PendingIntent, not ImmutablePendingIntent or MutablePendingIntent [UseRawPendingIntent]
+        return PendingIntent.getService(context, requestCode, intent, flags)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+src/com/wada811/immutablependingintent/test/RawPendingIntentKotlin.kt:34: Error: Using raw PendingIntent, not ImmutablePendingIntent or MutablePendingIntent [UseRawPendingIntent]
+        return PendingIntent.getForegroundService(context, requestCode, intent, flags)
+               ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+7 errors, 0 warnings

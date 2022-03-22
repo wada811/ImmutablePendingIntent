@@ -1,0 +1,56 @@
+Fix for src/com/wada811/immutablependingintent/test/RawPendingIntentKotlin.kt line 10: Replace with ImmutablePendingIntent.getActivity(context, requestCode, intent, flags):
+@@ -10 +10
+-         return PendingIntent.getActivity(context, requestCode, intent, flags)
++         return ImmutablePendingIntent.getActivity(context, requestCode, intent, flags)
+Fix for src/com/wada811/immutablependingintent/test/RawPendingIntentKotlin.kt line 10: Replace with MutablePendingIntent.getActivity(context, requestCode, intent, flags):
+@@ -10 +10
+-         return PendingIntent.getActivity(context, requestCode, intent, flags)
++         return MutablePendingIntent.getActivity(context, requestCode, intent, flags)
+Fix for src/com/wada811/immutablependingintent/test/RawPendingIntentKotlin.kt line 14: Replace with ImmutablePendingIntent.getActivity(context, requestCode, intent, flags, options):
+@@ -14 +14
+-         return PendingIntent.getActivity(context, requestCode, intent, flags, options)
++         return ImmutablePendingIntent.getActivity(context, requestCode, intent, flags, options)
+Fix for src/com/wada811/immutablependingintent/test/RawPendingIntentKotlin.kt line 14: Replace with MutablePendingIntent.getActivity(context, requestCode, intent, flags, options):
+@@ -14 +14
+-         return PendingIntent.getActivity(context, requestCode, intent, flags, options)
++         return MutablePendingIntent.getActivity(context, requestCode, intent, flags, options)
+Fix for src/com/wada811/immutablependingintent/test/RawPendingIntentKotlin.kt line 18: Replace with ImmutablePendingIntent.getActivities(context, requestCode, intents, flags):
+@@ -18 +18
+-         return PendingIntent.getActivities(context, requestCode, intents, flags)
++         return ImmutablePendingIntent.getActivities(context, requestCode, intents, flags)
+Fix for src/com/wada811/immutablependingintent/test/RawPendingIntentKotlin.kt line 18: Replace with MutablePendingIntent.getActivities(context, requestCode, intents, flags):
+@@ -18 +18
+-         return PendingIntent.getActivities(context, requestCode, intents, flags)
++         return MutablePendingIntent.getActivities(context, requestCode, intents, flags)
+Fix for src/com/wada811/immutablependingintent/test/RawPendingIntentKotlin.kt line 22: Replace with ImmutablePendingIntent.getActivities(context, requestCode, intents, flags, options):
+@@ -22 +22
+-         return PendingIntent.getActivities(context, requestCode, intents, flags, options)
++         return ImmutablePendingIntent.getActivities(context, requestCode, intents, flags, options)
+Fix for src/com/wada811/immutablependingintent/test/RawPendingIntentKotlin.kt line 22: Replace with MutablePendingIntent.getActivities(context, requestCode, intents, flags, options):
+@@ -22 +22
+-         return PendingIntent.getActivities(context, requestCode, intents, flags, options)
++         return MutablePendingIntent.getActivities(context, requestCode, intents, flags, options)
+Fix for src/com/wada811/immutablependingintent/test/RawPendingIntentKotlin.kt line 26: Replace with ImmutablePendingIntent.getBroadcast(context, requestCode, intent, flags):
+@@ -26 +26
+-         return PendingIntent.getBroadcast(context, requestCode, intent, flags)
++         return ImmutablePendingIntent.getBroadcast(context, requestCode, intent, flags)
+Fix for src/com/wada811/immutablependingintent/test/RawPendingIntentKotlin.kt line 26: Replace with MutablePendingIntent.getBroadcast(context, requestCode, intent, flags):
+@@ -26 +26
+-         return PendingIntent.getBroadcast(context, requestCode, intent, flags)
++         return MutablePendingIntent.getBroadcast(context, requestCode, intent, flags)
+Fix for src/com/wada811/immutablependingintent/test/RawPendingIntentKotlin.kt line 30: Replace with ImmutablePendingIntent.getService(context, requestCode, intent, flags):
+@@ -30 +30
+-         return PendingIntent.getService(context, requestCode, intent, flags)
++         return ImmutablePendingIntent.getService(context, requestCode, intent, flags)
+Fix for src/com/wada811/immutablependingintent/test/RawPendingIntentKotlin.kt line 30: Replace with MutablePendingIntent.getService(context, requestCode, intent, flags):
+@@ -30 +30
+-         return PendingIntent.getService(context, requestCode, intent, flags)
++         return MutablePendingIntent.getService(context, requestCode, intent, flags)
+Fix for src/com/wada811/immutablependingintent/test/RawPendingIntentKotlin.kt line 34: Replace with ImmutablePendingIntent.getForegroundService(context, requestCode, intent, flags):
+@@ -34 +34
+-         return PendingIntent.getForegroundService(context, requestCode, intent, flags)
++         return ImmutablePendingIntent.getForegroundService(context, requestCode, intent, flags)
+Fix for src/com/wada811/immutablependingintent/test/RawPendingIntentKotlin.kt line 34: Replace with MutablePendingIntent.getForegroundService(context, requestCode, intent, flags):
+@@ -34 +34
+-         return PendingIntent.getForegroundService(context, requestCode, intent, flags)
++         return MutablePendingIntent.getForegroundService(context, requestCode, intent, flags)
