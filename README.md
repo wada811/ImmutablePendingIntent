@@ -56,7 +56,7 @@ repositories {
 }
 
 dependencies {
-    implementation "com.wada811.github:ImmutablePendingIntent:x.y.z"
+    implementation 'com.github.wada811.ImmutablePendingIntent:ImmutablePendingIntent:x.y.z'
 }
 ```
 
