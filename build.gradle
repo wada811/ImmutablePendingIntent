@@ -1,6 +1,6 @@
 buildscript {
     ext {
-        agpVersion = "7.2.0"
+        agpVersion = "7.2.1"
         kotlinVersion = "1.6.21"
         lintVersion = "30.2.1"
     }
