@@ -1,21 +1,21 @@
-Fix for src/com/wada811/immutablependingintent/test/MutablePendingIntentKotlin.kt line 11: Add 'android.app.UseMutablePendingIntent' annotation to getActivity:
+Fix for src/com/wada811/immutablependingintent/test/MutablePendingIntentKotlin.kt line 11: Add 'com.wada811.immutablependingintent.UseMutablePendingIntent' annotation to getActivity:
 @@ -10 +10
-+     @android.app.UseMutablePendingIntent(reason = android.app.UseMutablePendingIntent.Reason.YouMustSelectReason)
-Fix for src/com/wada811/immutablependingintent/test/MutablePendingIntentKotlin.kt line 15: Add 'android.app.UseMutablePendingIntent' annotation to getActivity:
++     @com.wada811.immutablependingintent.UseMutablePendingIntent(reason = com.wada811.immutablependingintent.UseMutablePendingIntent.Reason.YouMustSelectReason)
+Fix for src/com/wada811/immutablependingintent/test/MutablePendingIntentKotlin.kt line 15: Add 'com.wada811.immutablependingintent.UseMutablePendingIntent' annotation to getActivity:
 @@ -14 +14
-+     @android.app.UseMutablePendingIntent(reason = android.app.UseMutablePendingIntent.Reason.YouMustSelectReason)
-Fix for src/com/wada811/immutablependingintent/test/MutablePendingIntentKotlin.kt line 19: Add 'android.app.UseMutablePendingIntent' annotation to getActivities:
++     @com.wada811.immutablependingintent.UseMutablePendingIntent(reason = com.wada811.immutablependingintent.UseMutablePendingIntent.Reason.YouMustSelectReason)
+Fix for src/com/wada811/immutablependingintent/test/MutablePendingIntentKotlin.kt line 19: Add 'com.wada811.immutablependingintent.UseMutablePendingIntent' annotation to getActivities:
 @@ -18 +18
-+     @android.app.UseMutablePendingIntent(reason = android.app.UseMutablePendingIntent.Reason.YouMustSelectReason)
-Fix for src/com/wada811/immutablependingintent/test/MutablePendingIntentKotlin.kt line 23: Add 'android.app.UseMutablePendingIntent' annotation to getActivities:
++     @com.wada811.immutablependingintent.UseMutablePendingIntent(reason = com.wada811.immutablependingintent.UseMutablePendingIntent.Reason.YouMustSelectReason)
+Fix for src/com/wada811/immutablependingintent/test/MutablePendingIntentKotlin.kt line 23: Add 'com.wada811.immutablependingintent.UseMutablePendingIntent' annotation to getActivities:
 @@ -22 +22
-+     @android.app.UseMutablePendingIntent(reason = android.app.UseMutablePendingIntent.Reason.YouMustSelectReason)
-Fix for src/com/wada811/immutablependingintent/test/MutablePendingIntentKotlin.kt line 27: Add 'android.app.UseMutablePendingIntent' annotation to getBroadcast:
++     @com.wada811.immutablependingintent.UseMutablePendingIntent(reason = com.wada811.immutablependingintent.UseMutablePendingIntent.Reason.YouMustSelectReason)
+Fix for src/com/wada811/immutablependingintent/test/MutablePendingIntentKotlin.kt line 27: Add 'com.wada811.immutablependingintent.UseMutablePendingIntent' annotation to getBroadcast:
 @@ -26 +26
-+     @android.app.UseMutablePendingIntent(reason = android.app.UseMutablePendingIntent.Reason.YouMustSelectReason)
-Fix for src/com/wada811/immutablependingintent/test/MutablePendingIntentKotlin.kt line 31: Add 'android.app.UseMutablePendingIntent' annotation to getService:
++     @com.wada811.immutablependingintent.UseMutablePendingIntent(reason = com.wada811.immutablependingintent.UseMutablePendingIntent.Reason.YouMustSelectReason)
+Fix for src/com/wada811/immutablependingintent/test/MutablePendingIntentKotlin.kt line 31: Add 'com.wada811.immutablependingintent.UseMutablePendingIntent' annotation to getService:
 @@ -30 +30
-+     @android.app.UseMutablePendingIntent(reason = android.app.UseMutablePendingIntent.Reason.YouMustSelectReason)
-Fix for src/com/wada811/immutablependingintent/test/MutablePendingIntentKotlin.kt line 35: Add 'android.app.UseMutablePendingIntent' annotation to getForegroundService:
++     @com.wada811.immutablependingintent.UseMutablePendingIntent(reason = com.wada811.immutablependingintent.UseMutablePendingIntent.Reason.YouMustSelectReason)
+Fix for src/com/wada811/immutablependingintent/test/MutablePendingIntentKotlin.kt line 35: Add 'com.wada811.immutablependingintent.UseMutablePendingIntent' annotation to getForegroundService:
 @@ -34 +34
-+     @android.app.UseMutablePendingIntent(reason = android.app.UseMutablePendingIntent.Reason.YouMustSelectReason)
++     @com.wada811.immutablependingintent.UseMutablePendingIntent(reason = com.wada811.immutablependingintent.UseMutablePendingIntent.Reason.YouMustSelectReason)

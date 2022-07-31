@@ -27,7 +27,7 @@ class UseMutablePendingIntentDetector : Detector(), SourceCodeScanner {
             ),
         )
 
-        private const val USE_ANNOTATION = "android.app.UseMutablePendingIntent"
+        private const val USE_ANNOTATION = "com.wada811.immutablependingintent.UseMutablePendingIntent"
     }
 
     override fun getApplicableMethodNames(): List<String> = listOf(
@@ -39,7 +39,7 @@ class UseMutablePendingIntentDetector : Detector(), SourceCodeScanner {
     )
 
     override fun visitMethodCall(context: JavaContext, node: UCallExpression, method: PsiMethod) {
-        if (!context.evaluator.isMemberInClass(method, "android.app.MutablePendingIntent")) {
+        if (!context.evaluator.isMemberInClass(method, "com.wada811.immutablependingintent.MutablePendingIntent")) {
             return
         }
         val (callSite, hasUseAnnotation) = if (isKotlin(node.uastParent?.sourcePsi)) {

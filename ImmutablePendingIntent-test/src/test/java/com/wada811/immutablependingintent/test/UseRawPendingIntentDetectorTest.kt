@@ -62,7 +62,7 @@ class UseRawPendingIntentDetectorTest {
                     File("src/main/java/com/wada811/immutablependingintent/test/ImmutablePendingIntentJava.java").readText()
                 ).indented(),
                 kotlin(
-                    File("../ImmutablePendingIntent/src/main/java/android/app/ImmutablePendingIntent.kt").readText()
+                    File("../ImmutablePendingIntent/src/main/java/com/wada811/immutablependingintent/ImmutablePendingIntent.kt").readText()
                 ).indented(),
             )
             .issues(UseRawPendingIntentDetector.ISSUE)
@@ -80,7 +80,7 @@ class UseRawPendingIntentDetectorTest {
                     File("src/main/java/com/wada811/immutablependingintent/test/ImmutablePendingIntentKotlin.kt").readText()
                 ).indented(),
                 kotlin(
-                    File("../ImmutablePendingIntent/src/main/java/android/app/ImmutablePendingIntent.kt").readText()
+                    File("../ImmutablePendingIntent/src/main/java/com/wada811/immutablependingintent/ImmutablePendingIntent.kt").readText()
                 ).indented(),
             )
             .issues(UseRawPendingIntentDetector.ISSUE)

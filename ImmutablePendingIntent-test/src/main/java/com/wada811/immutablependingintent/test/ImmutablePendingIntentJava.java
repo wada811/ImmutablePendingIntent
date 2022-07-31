@@ -1,11 +1,12 @@
 package com.wada811.immutablependingintent.test;
 
-import android.app.ImmutablePendingIntent;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import com.wada811.immutablependingintent.ImmutablePendingIntent;
 
+@SuppressWarnings("unused")
 class ImmutablePendingIntentJava {
     public PendingIntent getActivity(Context context, int requestCode, Intent intent, int flags) {
         return ImmutablePendingIntent.getActivity(context, requestCode, intent, flags);

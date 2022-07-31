@@ -1,7 +1,8 @@
 @file:JvmName("MutablePendingIntent")
 
-package android.app
+package com.wada811.immutablependingintent
 
+import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
 import android.os.Build

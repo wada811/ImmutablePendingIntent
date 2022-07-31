@@ -1,6 +1,8 @@
-package android.app
+@file:Suppress("unused")
 
-import android.app.UseMutablePendingIntent.Reason
+package com.wada811.immutablependingintent
+
+import com.wada811.immutablependingintent.UseMutablePendingIntent.Reason
 
 /**
  * Explain why to use MutablePendingIntent by selecting [Reason].
@@ -8,11 +10,11 @@ import android.app.UseMutablePendingIntent.Reason
  */
 @Retention(AnnotationRetention.BINARY)
 @Target(
-    AnnotationTarget.FUNCTION,
+        AnnotationTarget.FUNCTION,
 )
 annotation class UseMutablePendingIntent(
-    val reason: Reason,
-    val otherReason: String = ""
+        val reason: Reason,
+        val otherReason: String = ""
 ) {
     /**
      * These reasons are from the below link.
@@ -59,7 +61,7 @@ annotation class UseMutablePendingIntent(
         /**
          * Other. You must explain by [otherReason] to your team members.
          */
-        Other
+        Other,
         ;
     }
 }

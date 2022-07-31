@@ -1,10 +1,10 @@
 package com.wada811.immutablependingintent.test;
 
-import android.app.MutablePendingIntent;
 import android.app.PendingIntent;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
+import com.wada811.immutablependingintent.MutablePendingIntent;
 
 class MutablePendingIntentJava {
     public PendingIntent getActivity(Context context, int requestCode, Intent intent, int flags) {

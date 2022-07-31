@@ -1,13 +1,13 @@
 package com.wada811.immutablependingintent.test
 
-import android.app.ImmutablePendingIntent
-import android.app.MutablePendingIntent
 import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
 import androidx.test.core.app.ApplicationProvider
 import androidx.test.ext.junit.runners.AndroidJUnit4
 import com.google.common.truth.Truth
+import com.wada811.immutablependingintent.ImmutablePendingIntent
+import com.wada811.immutablependingintent.MutablePendingIntent
 import org.junit.Test
 import org.junit.runner.RunWith
 import org.robolectric.Shadows.shadowOf
