@@ -59,6 +59,15 @@ annotation class UseMutablePendingIntent(
         AlarmCount,
 
         /**
+         * PendingIntent passed by [android.widget.RemoteViews.setPendingIntentTemplate] is overwritten by [android.widget.RemoteViews.setOnClickFillInIntent]
+         * When using collections (eg. ListView, StackView etc.) in widgets,
+         * it is very costly to set PendingIntents on the individual items, and is hence not recommended.
+         * Instead this method should be used to set a single PendingIntent template on the collection,
+         * and individual items can differentiate their on-click behavior using RemoteViews#setOnClickFillInIntent(int, Intent).
+         */
+        CollectionRemoteViews,
+
+        /**
          * Other. You must explain by [otherReason] to your team members.
          */
         Other,
