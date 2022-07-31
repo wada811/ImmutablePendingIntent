@@ -1,10 +1,10 @@
 package com.wada811.immutablependingintent.test
 
-import android.app.MutablePendingIntent
 import android.app.PendingIntent
 import android.content.Context
 import android.content.Intent
 import android.os.Bundle
+import com.wada811.immutablependingintent.MutablePendingIntent
 
 class MutablePendingIntentKotlin {
     fun getActivity(context: Context, requestCode: Int, intent: Intent, flags: Int): PendingIntent {

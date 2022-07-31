@@ -17,7 +17,7 @@ class UseMutablePendingIntentDetectorTest {
                     File("src/main/java/com/wada811/immutablependingintent/test/MutablePendingIntentJava.java").readText()
                 ).indented(),
                 kotlin(
-                    File("../ImmutablePendingIntent/src/main/java/android/app/MutablePendingIntent.kt").readText()
+                    File("../ImmutablePendingIntent/src/main/java/com/wada811/immutablependingintent/MutablePendingIntent.kt").readText()
                 ).indented(),
             )
             .issues(UseMutablePendingIntentDetector.ISSUE)
@@ -35,7 +35,7 @@ class UseMutablePendingIntentDetectorTest {
                     File("src/main/java/com/wada811/immutablependingintent/test/MutablePendingIntentKotlin.kt").readText()
                 ).indented(),
                 kotlin(
-                    File("../ImmutablePendingIntent/src/main/java/android/app/MutablePendingIntent.kt").readText()
+                    File("../ImmutablePendingIntent/src/main/java/com/wada811/immutablependingintent/MutablePendingIntent.kt").readText()
                 ).indented(),
             )
             .issues(UseMutablePendingIntentDetector.ISSUE)
@@ -53,7 +53,7 @@ class UseMutablePendingIntentDetectorTest {
                     File("src/main/java/com/wada811/immutablependingintent/test/MutablePendingIntentJava.java").readText()
                 ).indented(),
                 kotlin(
-                    File("../ImmutablePendingIntent/src/main/java/android/app/MutablePendingIntent.kt").readText()
+                    File("../ImmutablePendingIntent/src/main/java/com/wada811/immutablependingintent/MutablePendingIntent.kt").readText()
                 ).indented(),
             )
             .issues(UseMutablePendingIntentDetector.ISSUE)
@@ -71,7 +71,7 @@ class UseMutablePendingIntentDetectorTest {
                     File("src/main/java/com/wada811/immutablependingintent/test/MutablePendingIntentKotlin.kt").readText()
                 ).indented(),
                 kotlin(
-                    File("../ImmutablePendingIntent/src/main/java/android/app/MutablePendingIntent.kt").readText()
+                    File("../ImmutablePendingIntent/src/main/java/com/wada811/immutablependingintent/MutablePendingIntent.kt").readText()
                 ).indented(),
             )
             .issues(UseMutablePendingIntentDetector.ISSUE)

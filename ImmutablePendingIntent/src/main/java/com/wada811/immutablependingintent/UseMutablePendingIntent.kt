@@ -1,6 +1,8 @@
-package android.app
+@file:Suppress("unused")
 
-import android.app.UseMutablePendingIntent.Reason
+package com.wada811.immutablependingintent
+
+import com.wada811.immutablependingintent.UseMutablePendingIntent.Reason
 
 /**
  * Explain why to use MutablePendingIntent by selecting [Reason].
@@ -8,11 +10,11 @@ import android.app.UseMutablePendingIntent.Reason
  */
 @Retention(AnnotationRetention.BINARY)
 @Target(
-    AnnotationTarget.FUNCTION,
+        AnnotationTarget.FUNCTION,
 )
 annotation class UseMutablePendingIntent(
-    val reason: Reason,
-    val otherReason: String = ""
+        val reason: Reason,
+        val otherReason: String = ""
 ) {
     /**
      * These reasons are from the below link.
@@ -57,9 +59,18 @@ annotation class UseMutablePendingIntent(
         AlarmCount,
 
         /**
+         * PendingIntent passed by [android.widget.RemoteViews.setPendingIntentTemplate] is overwritten by [android.widget.RemoteViews.setOnClickFillInIntent]
+         * When using collections (eg. ListView, StackView etc.) in widgets,
+         * it is very costly to set PendingIntents on the individual items, and is hence not recommended.
+         * Instead this method should be used to set a single PendingIntent template on the collection,
+         * and individual items can differentiate their on-click behavior using RemoteViews#setOnClickFillInIntent(int, Intent).
+         */
+        CollectionRemoteViews,
+
+        /**
          * Other. You must explain by [otherReason] to your team members.
          */
-        Other
+        Other,
         ;
     }
 }
