@@ -10,8 +10,8 @@ ImmutablePendingIntent provides
 
 ## Why need ImmutablePendingIntent
 
-Apps targeting Android 12 and higher must specify either `FLAG_IMMUTABLE` or `FLAG_MUTABLE` when constructing a PendingIntent.
-More info: https://developer.android.com/about/versions/12/behavior-changes-12#pending-intent-mutability
+Apps targeting Android 12 and higher must specify either `FLAG_IMMUTABLE` or `FLAG_MUTABLE` when constructing a PendingIntent. More
+info: https://developer.android.com/about/versions/12/behavior-changes-12#pending-intent-mutability
 
 ### methods
 
@@ -21,8 +21,8 @@ PendingIntent creation methods are unsafe because it is not clear whether the fl
 
 ### lint
 
-`UnspecifiedImmutableFlag` lint detects that create PendingIntent not specifying either `FLAG_IMMUTABLE` or `FLAG_MUTABLE` flag.
-But, `UnspecifiedImmutableFlag` lint cannot detect the flags passed as method parameter.
+`UnspecifiedImmutableFlag` lint detects that create PendingIntent not specifying either `FLAG_IMMUTABLE` or `FLAG_MUTABLE` flag. But, `UnspecifiedImmutableFlag` lint cannot detect the flags passed as
+method parameter.
 
 `ImmutablePendingIntent` provides lint to make an error when using methods that create PendingIntent.
 
@@ -48,15 +48,15 @@ When using `MutablePendingIntent`, you should explain why to use `MutablePending
 
 ### Dependency
 
-[![](https://jitpack.io/v/wada811/ImmutablePendingIntent.svg)](https://jitpack.io/#wada811/ImmutablePendingIntent)
+[![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.wada811.immutablependingintent/immutablependingintent/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.wada811.immutablependingintent/immutablependingintent)
 
 ```groovy
 repositories {
-    maven { url "https://jitpack.io" }
+    mavenCentral()
 }
 
 dependencies {
-    implementation 'com.github.wada811.ImmutablePendingIntent:ImmutablePendingIntent:x.y.z'
+    implementation 'com.wada811.immutablependingintent:immutablependingintent:x.y.z'
 }
 ```
 
@@ -75,8 +75,7 @@ See [Create immutable pending intents whenever possible | Intents and Intent Fil
 
 #### When using `MutablePendingIntent`, you should specify `UseMutablePendingIntent` annotation
 
-In most cases, your app should create immutable PendingIntent.
-However, certain use cases require mutable PendingIntent.
+In most cases, your app should create immutable PendingIntent. However, certain use cases require mutable PendingIntent.
 
 When using `MutablePendingIntent` without specifying `UseMutablePendingIntent` annotation, lint makes an error.
 

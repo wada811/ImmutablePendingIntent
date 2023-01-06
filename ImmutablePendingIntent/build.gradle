@@ -3,8 +3,11 @@ plugins {
     id 'org.jetbrains.kotlin.android'
 }
 
+apply from: "${rootDir}/publish-module.gradle"
+
 android {
-    compileSdk 31
+    namespace 'com.wada811.immutablependingintent'
+    compileSdk 33
     defaultConfig {
         minSdk 21
     }

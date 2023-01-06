@@ -4,11 +4,12 @@ plugins {
 }
 
 android {
-    compileSdk 31
+    namespace 'com.wada811.immutablependingintent.test'
+    compileSdk 33
     defaultConfig {
         applicationId "com.wada811.immutablependingintent.test"
         minSdk 26
-        targetSdk 31
+        targetSdk 33
         versionCode 1
         versionName "1.0"
 //        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
@@ -20,12 +21,12 @@ android {
     kotlinOptions {
         jvmTarget = JavaVersion.VERSION_11.toString()
     }
-    lintOptions {
-        abortOnError false
-        textReport true
-    }
     testOptions {
         unitTests.includeAndroidResources = true
+    }
+    lint {
+        abortOnError false
+        textReport true
     }
 }
 

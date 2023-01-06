@@ -140,3 +140,6 @@ fabric.properties
 !.idea/dictionaries/
 .idea/dictionaries/**
 !.idea/dictionaries/Project.xml
+
+.envrc
+
